@@ -525,8 +525,11 @@ def info_dog_diagram5():
 
 @app.route('/statistics', methods=['GET', 'POST'])
 def statistics():
-    main_dog_diagram()
-    return render_template('dog_diagram.html')
+    if if_auto:
+        main_dog_diagram()
+        return render_template('diagram.html')
+    else:
+        return render_template('diagram_error.html')
 
 
 @app.route('/dog_more_info', methods=['GET', 'POST'])
