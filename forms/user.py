@@ -15,3 +15,8 @@ class LoginForm(FlaskForm):
     email = EmailField('Почта', validators=[DataRequired()])
     password = PasswordField('Пароль', validators=[DataRequired()])
     submit = SubmitField('Войти')
+
+
+class RequestsForm(FlaskForm):
+    request = StringField('Запрос', validators=[DataRequired()])
+    submit = SubmitField('Найти тест')

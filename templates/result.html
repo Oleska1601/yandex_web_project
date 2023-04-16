@@ -1,0 +1,51 @@
+{% extends "log_base.html" %}
+
+{% block content %}
+
+<style>
+
+  .card {
+    align: center;
+    height: 1000px;
+    width: 1200px;
+  }
+  .img {
+    object-fit: cover;
+    width: 600px;
+    height: 400px;
+    float: right;
+  }
+  .progress {
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    width: 800px;
+    height: 10px;
+  }
+  .title {
+    text-align: center;
+  }
+  .title-1 {
+    text-align: center;
+    position: relative;
+    top: -870px;
+  }
+
+
+</style>
+
+<br><h1 class="header_site">Тест "Какая ты собака?"</h1><br>
+<br>
+
+<div class="card mx-auto p-2">
+    <div class="card-body">
+        <h2 class="title">Результаты</h2>
+        </div>
+        <h4 class="title-1">Вы {{title}}!</h4>
+        <h4 class="title-1">{{spis}}</h4>
+        <h4>Для более подробной информации о других участниках перейдите в раздел "Статистика"</h4>
+    </div>
+</div>
+
+
+{% endblock %}
